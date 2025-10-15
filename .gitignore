@@ -1,0 +1,8 @@
+LEH_AAPL.xlsx
+wrds1.csv
+wrds2.csv
+env
+__pycache__/
+*.pyc
+.DS_Store
+.ipynb_checkpoints
