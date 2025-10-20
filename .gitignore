@@ -1,7 +1,5 @@
 LEH_AAPL.xlsx
-wrds1.csv
-wrds2.csv
-wrds3.csv
+wrds*
 env
 __pycache__/
 *.pyc
