@@ -157,7 +157,7 @@ This repository is for **academic and research purposes only**. It does not cons
 
 ---
 
-## Acknowledgements
+## Course Context and Supervision
 
 This work was conducted as part of a graduate course at **Duke University** under the guidance of **Prof. Xiaobai Sun**.
 
