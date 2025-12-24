@@ -22,7 +22,7 @@ The analysis is conducted over **rolling time windows** to capture evolving mark
 
 ## Repository Structure
 
-```python
+```text
 ├── clustering.ipynb
 ├── clustering_and_diffusion.ipynb
 ├── sanitation_and_fiedler_value.ipynb
@@ -96,13 +96,13 @@ To reproduce results, users must obtain equivalent data from **WRDS (CRSP)** or 
 
 ### 4. Clustering
 
-- Recursive Fiedler cuts applied  
-- Termination based on Fiedler value threshold rather than conductance (due to graph density)  
-- Resulting clusters compared with sector labels  
+- Recursive Fiedler cuts applied
+- Termination based on Fiedler value threshold (as observed during calm market conditions) rather than conductance (due to graph density)
+- Resulting clusters compared with sector labels
 
 ### 5. Stress Diffusion
 
-- Row-normalized Laplacian used to simulate shock propagation  
+- Row-normalized Laplacian used to simulate shock propagation
 - Localized shocks injected at specific firms  
 - Diffusion dynamics analyzed to assess contagion pathways and systemic risk  
 
@@ -120,7 +120,7 @@ To reproduce results, users must obtain equivalent data from **WRDS (CRSP)** or 
 ## Limitations
 
 - Relies solely on price correlations (no fundamentals or macro variables)  
-- Fully connected graphs are inherently noisy  
+- Fully connected graphs are dense and noisy
 - Diffusion model is preliminary and intended as a proof of concept  
 - No causal directionality (e.g., Granger causality) is modeled  
 
@@ -128,10 +128,8 @@ To reproduce results, users must obtain equivalent data from **WRDS (CRSP)** or 
 
 ## Potential Extensions
 
-- Incorporate macroeconomic or balance-sheet variables  
-- Use sparse or thresholded networks  
-- Introduce time-directed or causal edges  
-- Calibrate diffusion parameters to firm size or market conditions  
+- Using dimensionality reduction techniques or careful thresholding can mitigate the high density problem
+- Calibrating diffusion parameters to firm size or market conditions can be very useful in integrating external factors into the model
 
 ---
 
@@ -156,6 +154,12 @@ This repository is for **academic and research purposes only**. It does not cons
 
 - **Sagnik Chakraborty**  
 - **Cici Liu**
+
+---
+
+## Acknowledgements
+
+This work was conducted as part of a graduate course at **Duke University** under the guidance of **Prof. Xiaobai Sun**.
 
 ---
 
